@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Django Site</title>
+</head>
+<body>
+    <h1>My Django Site</h1>
+    <a href="{% url 'home' %}">Home</a> | 
+    <a href="{% url 'about' %}">About</a>
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+    <hr>
+    <p>© 2025 - My Django Project</p>
+</body>
+</html>
